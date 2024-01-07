@@ -1,0 +1,805 @@
+.wrap {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  height: 20rem;
+}
+.header .btnMenu {
+  position: absolute;
+  top: 50%;
+  left: 8rem;
+  padding: 2rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.header .btnMenu img {
+  width: 8rem;
+}
+.headerTitle {
+  font-weight: 700;
+  font-size: 7rem;
+  text-align: center;
+}
+
+.main .visual {
+  position: relative;
+}
+.main .visualTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  top: 8rem;
+  left: 0;
+  width: 100%;
+  padding: 0 10rem;
+}
+.main .visualTop .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+}
+.main .visualTop .profile .userPictureWrap {
+  position: relative;
+}
+.main .visualTop .profile .userPictureWrap .userGrade {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: -1.5rem;
+  left: -1rem;
+  width: 7rem;
+  height: 7rem;
+  background: #9751d6;
+  border-radius: 100%;
+  font-weight: 500;
+  font-size: 4rem;
+  line-height: 1;
+}
+.main .visualTop .profile .userPictureWrap .userPicture {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .visualTop .profile .userPictureWrap .userPictureInner {
+  overflow: hidden;
+  width: 18.4rem;
+  height: 18.4rem;
+  background: white;
+  border-radius: 6rem;
+}
+.main .visualTop .profile .userName {
+  width: 30rem;
+  margin-left: 4rem;
+  font-weight: 500;
+  font-size: 6.6rem;
+}
+.main .visualTop .period {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 69rem;
+  height: 16rem;
+  background: #006fe7;
+  border: 0.4rem solid white;
+  border-radius: 8rem;
+}
+.main .visualTop .period .btnPeriod {
+  position: relative;
+  height: 100%;
+  line-height: 1;
+  width: 33.3%;
+  font-size: 6rem;
+  color: #508fff;
+}
+.main .visualTop .period .btnPeriod.isActive {
+  font-weight: 700;
+  color: #057cfc;
+}
+.main .visualTop .period .btnPeriod.isActive span {
+  position: inherit;
+  z-index: 1;
+}
+.main .visualTop .period .btnPeriod.isActive:before {
+  position: absolute;
+  top: -0.4rem;
+  left: -0.4rem;
+  right: -0.4rem;
+  bottom: -0.4rem;
+  background: white;
+  border-radius: 8rem;
+  content: "";
+}
+.main .visual .currentInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  width: 26.66%;
+  padding: 3.2rem;
+  background: white;
+  border-radius: 4rem;
+  -webkit-box-shadow: 0 3rem 3rem 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3rem 3rem 0 rgba(0, 0, 0, 0.2);
+}
+.main .visual .currentInfo:after {
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 50%;
+  border-bottom: 2.6rem solid white;
+  border-left: 1.9rem solid transparent;
+  border-right: 1.9rem solid transparent;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  content: "";
+}
+.main .visual .currentInfo.class {
+  bottom: 52.5%;
+  right: 6.94%;
+}
+.main .visual .currentInfo.class:after {
+  bottom: -2.4rem;
+  -webkit-transform: translateX(-50%) rotate(180deg);
+          transform: translateX(-50%) rotate(180deg);
+}
+.main .visual .currentInfo.time {
+  top: 57.85%;
+  left: 5.55%;
+}
+.main .visual .currentInfo.time:after {
+  top: -2.4rem;
+}
+.main .visual .currentInfo .infoTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  font-size: 4.6rem;
+}
+.main .visual .currentInfo .infoTitle .iconTitle {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.main .visual .currentInfo .infoTitle .iconTitle img {
+  width: 3.9rem;
+}
+.main .visual .currentInfo .infoTitle span {
+  margin-left: 2rem;
+}
+.main .visual .currentInfo .infoDesc {
+  margin-top: 2rem;
+  font-weight: 700;
+  font-size: 3.2rem;
+}
+.main .visual .currentInfo .infoValue {
+  font-weight: 900;
+  font-size: 8rem;
+}
+.main .visual .currentInfo .infoUnit {
+  color: #898989;
+}
+.main .panelInfo {
+  margin-top: -9.2rem;
+  padding: 0 10rem 8.9rem;
+}
+.main .panelInfo .dateArea {
+  margin: 0 12rem;
+}
+.main .panelInfo .dateAreaWrap {
+  position: relative;
+}
+.main .panelInfo .dateAreaWrap .swiper-button-prev:after,
+.main .panelInfo .dateAreaWrap .swiper-button-next:after {
+  font-size: 6rem;
+}
+.main .panelInfo .dateAreaWrap .swiper-button-prev {
+  left: 0;
+}
+.main .panelInfo .dateAreaWrap .swiper-button-next {
+  right: 0;
+}
+.main .panelInfo .dateAreaWrap .swiper-button-disabled {
+  opacity: 1;
+  color: #999999;
+}
+.main .panelInfo .dateArea .swiper-slide span {
+  display: block;
+  padding: 9.2rem 0;
+  font-weight: 700;
+  font-size: 7rem;
+  text-align: center;
+}
+.main .panelInfo .panelSection.section1 {
+  margin-top: 8rem;
+}
+.main .panelInfo .panelSection.section1 .classDate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  width: 114rem;
+  max-width: 100%;
+  margin: 15.1rem auto 0;
+}
+.main .panelInfo .panelSection.section1 .classDate .classDateItem + .classDateItem .itemIcon:after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: -50%;
+  margin-left: 2rem;
+  width: 4rem;
+  height: 4rem;
+  background: url(/img/icon_plus.png) center no-repeat;
+  background-size: contain;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  content: "";
+}
+.main .panelInfo .panelSection.section1 .classDate .classDateItem + .classDateItem.totalItem .itemIcon:after {
+  background: url(/img/icon_equal.png) center no-repeat;
+  background-size: contain;
+}
+.main .panelInfo .panelSection.section1 .classDate .itemIcon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  width: 27.8rem;
+  height: 27.8rem;
+  border: 0.8rem solid #eeeeee;
+  border-radius: 100%;
+}
+.main .panelInfo .panelSection.section1 .classDate .itemIcon .date {
+  position: absolute;
+  top: -2.9rem;
+  right: -5.8rem;
+  padding: 2.4rem 4rem;
+  background: #057cfc;
+  border-radius: 6rem;
+  font-weight: 500;
+  font-size: 5.6rem;
+  color: white;
+}
+.main .panelInfo .panelSection.section1 .classDate .itemIcon img {
+  width: 100%;
+  height: 100%;
+}
+.main .panelInfo .panelSection.section1 .classDate .itemText {
+  display: block;
+  margin-top: 3.3rem;
+  font-weight: 700;
+  font-size: 5.6rem;
+  text-align: center;
+}
+.main .panelInfo .panelSection.section2 {
+  margin-top: 20.8rem;
+}
+.main .panelInfo .panelSection.section2 .tableStudyStatus {
+  width: 100%;
+  margin-top: 7.1rem;
+  border-bottom: 0.5rem solid #eeeeee;
+  vertical-align: middle;
+}
+.main .panelInfo .panelSection.section2 .tableStudyStatus tr th, .main .panelInfo .panelSection.section2 .tableStudyStatus tr td {
+  border-top: 0.5rem solid #eeeeee;
+}
+.main .panelInfo .panelSection.section2 .tableStudyStatus tr th {
+  width: 24.6%;
+  background: #f9f9f9;
+  text-align: center;
+}
+.main .panelInfo .panelSection.section2 .tableStudyStatus tr td {
+  padding: 13rem 0 13rem 7.8rem;
+  border-left: 0.5rem solid #eeeeee;
+}
+.main .panelInfo .panelSection.section2 .tableStudyStatus .titleStatus {
+  display: block;
+  margin-top: 3rem;
+  font-size: 4.4rem;
+  line-height: 1.13;
+  color: #7e7e7e;
+}
+.main .panelInfo .panelSection.section2 .tableStudyStatus .iconStatus {
+  display: inline-block;
+  width: 8.7rem;
+  height: 8.1rem;
+}
+.main .panelInfo .panelSection.section2 .tableStudyStatus .studyTitle {
+  padding-left: 8rem;
+  font-family: "Malgun Gothic";
+  font-weight: bold;
+  font-size: 6.2rem;
+  color: #222222;
+}
+.main .panelInfo .panelSection.section2 .tableStudyStatus .studyTitle.time {
+  background: url(/img/icon_arrow_down.png) no-repeat left center;
+  background-size: 3.8rem;
+}
+.main .panelInfo .panelSection.section2 .tableStudyStatus .studyTitle.time + .studyDesc .highlight {
+  color: #ff7d00;
+}
+.main .panelInfo .panelSection.section2 .tableStudyStatus .studyTitle.class {
+  background: url(/img/icon_arrow_up.png) no-repeat left center;
+  background-size: 3.8rem;
+}
+.main .panelInfo .panelSection.section2 .tableStudyStatus .studyTitle.class + .studyDesc .highlight {
+  color: #18ac90;
+}
+.main .panelInfo .panelSection.section2 .tableStudyStatus .studyTitle.fidelity {
+  background: url(/img/icon_heart2.png) no-repeat left center;
+  background-size: 3.8rem;
+}
+.main .panelInfo .panelSection.section2 .tableStudyStatus .studyTitle.fidelity + .studyDesc .highlight {
+  color: #9751d6;
+}
+.main .panelInfo .panelSection.section2 .tableStudyStatus .studyTitle .studyValue {
+  font-size: 9rem;
+  color: #022222;
+  letter-spacing: -0.5rem;
+}
+.main .panelInfo .panelSection.section2 .tableStudyStatus .studyDesc {
+  margin-top: 5.1rem;
+  font-size: 5.2rem;
+  line-height: 1.34;
+}
+.main .panelInfo .panelSection.section3, .main .panelInfo .panelSection.section4 {
+  margin-top: 19.4rem;
+}
+.main .panelInfo .panelSection.section3 .panelTitle, .main .panelInfo .panelSection.section4 .panelTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main .panelInfo .panelSection.section3 .panelTitle .minutes, .main .panelInfo .panelSection.section4 .panelTitle .minutes {
+  font-size: 5rem;
+}
+.main .panelInfo .panelSection.section3 .panelTitle .weekInfo, .main .panelInfo .panelSection.section4 .panelTitle .weekInfo {
+  font-size: 4.4rem;
+}
+.main .panelInfo .panelSection.section3 .panelTitle .weekInfo .weekItem, .main .panelInfo .panelSection.section4 .panelTitle .weekInfo .weekItem {
+  position: relative;
+  padding-left: 5.5rem;
+}
+.main .panelInfo .panelSection.section3 .panelTitle .weekInfo .weekItem:after, .main .panelInfo .panelSection.section4 .panelTitle .weekInfo .weekItem:after {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  content: "";
+}
+.main .panelInfo .panelSection.section3 .panelTitle .weekInfo .weekItem + .weekItem, .main .panelInfo .panelSection.section4 .panelTitle .weekInfo .weekItem + .weekItem {
+  margin-left: 5.4rem;
+}
+.main .panelInfo .panelSection.section3 .panelTitle .weekInfo .weekItem.isCurrent, .main .panelInfo .panelSection.section4 .panelTitle .weekInfo .weekItem.isCurrent {
+  color: #057cfc;
+}
+.main .panelInfo .panelSection.section3 .panelTitle .weekInfo .weekItem.isCurrent:after, .main .panelInfo .panelSection.section4 .panelTitle .weekInfo .weekItem.isCurrent:after {
+  background: #057cfc;
+}
+.main .panelInfo .panelSection.section3 .panelTitle .weekInfo .weekItem.isLast, .main .panelInfo .panelSection.section4 .panelTitle .weekInfo .weekItem.isLast {
+  color: #5bc6b2;
+}
+.main .panelInfo .panelSection.section3 .panelTitle .weekInfo .weekItem.isLast:after, .main .panelInfo .panelSection.section4 .panelTitle .weekInfo .weekItem.isLast:after {
+  background: #5bc6b2;
+}
+.main .panelInfo .panelSection.section3 .panelTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main .panelInfo .panelSection.section3 .panelTitle .minutes {
+  font-size: 5rem;
+}
+.main .panelInfo .panelSection.section3 .panelTitle .weekInfo {
+  font-size: 4.4rem;
+}
+.main .panelInfo .panelSection.section3 .panelTitle .weekInfo .weekItem {
+  position: relative;
+  padding-left: 5.5rem;
+}
+.main .panelInfo .panelSection.section3 .panelTitle .weekInfo .weekItem:after {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  content: "";
+}
+.main .panelInfo .panelSection.section3 .panelTitle .weekInfo .weekItem + .weekItem {
+  margin-left: 5.4rem;
+}
+.main .panelInfo .panelSection.section3 .panelTitle .weekInfo .weekItem.isCurrent {
+  color: #057cfc;
+}
+.main .panelInfo .panelSection.section3 .panelTitle .weekInfo .weekItem.isCurrent:after {
+  background: #057cfc;
+}
+.main .panelInfo .panelSection.section3 .panelTitle .weekInfo .weekItem.isLast {
+  color: #5bc6b2;
+}
+.main .panelInfo .panelSection.section3 .panelTitle .weekInfo .weekItem.isLast:after {
+  background: #5bc6b2;
+}
+.main .panelInfo .panelSection.section3 .panelContent {
+  margin-top: 7.6rem;
+}
+.main .panelInfo .panelSection.section3 .panelContent .weeklyStudyItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  padding: 3.5rem 0;
+}
+.main .panelInfo .panelSection.section3 .panelContent .weeklyStudyItem + .weeklyStudyItem:before {
+  position: absolute;
+  top: -0.2rem;
+  left: 21rem;
+  width: calc(100% - 21rem);
+  height: 0.4rem;
+  background: #eeeeee;
+  content: "";
+}
+.main .panelInfo .panelSection.section3 .panelContent .weeklyStudyItem .day {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 21rem;
+  height: 21rem;
+  border: 0.4rem solid #eeeeee;
+  border-radius: 6rem;
+  font-size: 5rem;
+  color: #999999;
+}
+.main .panelInfo .panelSection.section3 .panelContent .weeklyStudyItem .studyData {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: calc(100% - 21rem);
+  padding-left: 5.43%;
+}
+.main .panelInfo .panelSection.section3 .panelContent .weeklyStudyItem .studyDataItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main .panelInfo .panelSection.section3 .panelContent .weeklyStudyItem .studyDataItem.current .dataNum {
+  color: #057cfc;
+}
+.main .panelInfo .panelSection.section3 .panelContent .weeklyStudyItem .studyDataItem.current .graphValue {
+  background: #057cfc;
+}
+.main .panelInfo .panelSection.section3 .panelContent .weeklyStudyItem .studyDataItem.last {
+  margin-top: 4rem;
+}
+.main .panelInfo .panelSection.section3 .panelContent .weeklyStudyItem .studyDataItem.last .dataNum {
+  color: #5bc6b2;
+}
+.main .panelInfo .panelSection.section3 .panelContent .weeklyStudyItem .studyDataItem.last .graphValue {
+  background: #5bc6b2;
+}
+.main .panelInfo .panelSection.section3 .panelContent .weeklyStudyItem .studyDataItem .graph {
+  overflow: hidden;
+  position: relative;
+  width: 84.52%;
+  height: 3.3rem;
+  background: #eeeeee;
+  border-radius: 1.75rem;
+}
+.main .panelInfo .panelSection.section3 .panelContent .weeklyStudyItem .studyDataItem .graphValue {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.75rem;
+  content: "";
+}
+.main .panelInfo .panelSection.section3 .panelContent .weeklyStudyItem .studyDataItem .dataNum {
+  font-weight: bold;
+  font-size: 5.2rem;
+}
+.main .panelInfo .panelSection.section4 .panelContent {
+  margin-top: 17rem;
+}
+.main .panelInfo .panelSection.section4 .panelContent .weeklyStudyGraph {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 50rem;
+  background-size: 100% 5rem;
+  background-image: linear-gradient(to bottom, #f6f6f6 2px, transparent 2px);
+  border-bottom: 0.4rem solid #f6f6f6;
+}
+.main .panelInfo .panelSection.section4 .panelContent .weeklyStudyItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.main .panelInfo .panelSection.section4 .panelContent .weeklyStudyItem .studyData {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 100%;
+}
+.main .panelInfo .panelSection.section4 .panelContent .weeklyStudyItem .studyDataItem {
+  position: relative;
+  width: 3.6rem;
+  height: 50%;
+}
+.main .panelInfo .panelSection.section4 .panelContent .weeklyStudyItem .studyDataItem .dataNum {
+  position: absolute;
+  top: -5.2rem;
+  left: 50%;
+  font-size: 4rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.main .panelInfo .panelSection.section4 .panelContent .weeklyStudyItem .studyDataItem.current {
+  color: #057cfc;
+}
+.main .panelInfo .panelSection.section4 .panelContent .weeklyStudyItem .studyDataItem.current .graph {
+  background: #057cfc;
+}
+.main .panelInfo .panelSection.section4 .panelContent .weeklyStudyItem .studyDataItem.last {
+  margin-left: 2rem;
+  color: #5bc6b2;
+}
+.main .panelInfo .panelSection.section4 .panelContent .weeklyStudyItem .studyDataItem.last .graph {
+  background: #5bc6b2;
+}
+.main .panelInfo .panelSection.section4 .panelContent .weeklyStudyItem .studyDataItem .graph {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 1.75rem;
+  border-top-right-radius: 1.75rem;
+}
+.main .panelInfo .panelSection.section4 .panelContent .weeklyStudy .weekList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 4.2rem;
+}
+.main .panelInfo .panelSection.section4 .panelContent .weeklyStudy .weekItem {
+  width: 9.2rem;
+  text-align: center;
+  font-weight: 500;
+  font-size: 4.6rem;
+}
+.main .panelInfo .panelSection.section5 {
+  margin-top: 19.8rem;
+}
+.main .panelInfo .panelSection.section5 .panelContent {
+  border-top: 0.4rem solid #eeeeee;
+  margin-top: 7.1rem;
+}
+.main .panelInfo .panelSection.section5 .panelContent .tableWrap {
+  overflow-y: auto;
+  position: relative;
+  height: 156.7rem;
+}
+.main .panelInfo .panelSection.section5 .panelContent .tableStudyVolume {
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+}
+.main .panelInfo .panelSection.section5 .panelContent .tableStudyVolume tr th, .main .panelInfo .panelSection.section5 .panelContent .tableStudyVolume tr td {
+  border-left: 0.4rem solid #eeeeee;
+}
+.main .panelInfo .panelSection.section5 .panelContent .tableStudyVolume tr th:first-child, .main .panelInfo .panelSection.section5 .panelContent .tableStudyVolume tr td:first-child {
+  border-left: 0;
+}
+.main .panelInfo .panelSection.section5 .panelContent .tableStudyVolume tr th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 4.2rem 0;
+  background: #f9f9f9;
+  font-size: 4.4rem;
+  color: #7e7e7e;
+}
+.main .panelInfo .panelSection.section5 .panelContent .tableStudyVolume tr th span {
+  display: inline-block;
+  position: relative;
+  padding-left: 6.8rem;
+}
+.main .panelInfo .panelSection.section5 .panelContent .tableStudyVolume tr th span:before {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  content: "";
+}
+.main .panelInfo .panelSection.section5 .panelContent .tableStudyVolume tr th span.titleClass:before {
+  width: 5.2rem;
+  height: 4.8rem;
+  background: url(/img/icon_class.png) no-repeat left center;
+  background-size: 5.2rem;
+}
+.main .panelInfo .panelSection.section5 .panelContent .tableStudyVolume tr th span.titleTime:before {
+  width: 4.4rem;
+  height: 5.4rem;
+  background: url(/img/icon_time.png) no-repeat left center;
+  background-size: 4.4rem;
+}
+.main .panelInfo .panelSection.section5 .panelContent .tableStudyVolume tr td {
+  padding: 7.4rem 0;
+  border-bottom: 0.4rem solid #eeeeee;
+  font-size: 5.2rem;
+}
+.main .panelInfo .panelSection.section6 {
+  margin-top: 19.6rem;
+}
+.main .panelInfo .panelSection.section6 .panelContent {
+  margin-top: 7.1rem;
+}
+.main .panelInfo .panelSection.section6 .panelContent .listStudyRatio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.main .panelInfo .panelSection.section6 .panelContent .listStudyRatioItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 33.3%;
+  height: 24rem;
+  border: 0.4rem solid #f2f2f2;
+  border-top: 0;
+  border-left: 0;
+}
+.main .panelInfo .panelSection.section6 .panelContent .listStudyRatioItem:nth-child(-n+3) {
+  border-top: 0.4rem solid #f2f2f2;
+}
+.main .panelInfo .panelSection.section6 .panelContent .listStudyRatioItem:nth-child(3n+1) {
+  border-left: 0.4rem solid #f2f2f2;
+}
+.main .panelInfo .panelSection.section6 .panelContent .listStudyRatio .iconWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 20rem;
+}
+.main .panelInfo .panelSection.section6 .panelContent .listStudyRatio .iconWrap img {
+  width: 10.7rem;
+}
+.main .panelInfo .panelSection.section6 .panelContent .listStudyRatio .contWrap {
+  padding: 0 1.5rem;
+  font-weight: 700;
+}
+.main .panelInfo .panelSection.section6 .panelContent .listStudyRatio .contWrap span {
+  display: block;
+}
+.main .panelInfo .panelSection.section6 .panelContent .listStudyRatio .contWrap span.subject {
+  font-size: 4rem;
+  color: #333333;
+}
+.main .panelInfo .panelSection.section6 .panelContent .listStudyRatio .contWrap span.ratio {
+  margin-top: 3rem;
+  font-size: 6rem;
+  color: #057cfc;
+}
+.main .panelInfo .panelTitle {
+  font-weight: 700;
+  font-size: 7rem;
+}

@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>천재교과서 밀크T</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/swiper-bundle.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <script src="/js/jquery-3.6.1.min.js"></script>
+    <script src="/js/swiper-bundle.min.js"></script>
+    <script src="/js/ui.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <a href="javascript:void(0);" class="btnMenu">
+                <img src="/img/icon_menu.png" aria-hidden="true" alt="">
+            </a>
+            <span class="headerTitle">T리포트</span>
+        </div>
+        <div class="main">
+            <div class="visual">
+                <div class="visualTop">
+                    <div class="profile">
+                        <div class="userPictureWrap">
+                            <span class="userGrade">고</span>
+                            <div class="userPictureInner">
+                                <img src="/img/img_empty_profile.png" class="userPicture" alt="프로필 이미지">
+                            </div>
+                        </div>
+                        <span class="userName">김고등</span>
+                    </div>
+                    <div class="period">
+                        <button type="button" class="btnPeriod">
+                            <span>일간</span>
+                        </button>
+                        <button type="button" class="btnPeriod isActive">
+                            <span>주간</span>
+                        </button>
+                        <button type="button" class="btnPeriod">
+                            <span>월간</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="currentInfo time">
+                    <p class="infoTitle">
+                        <i class="iconTitle" aria-hidden="true">
+                            <img src="/img/icon_time.png" alt="수강시간 아이콘">
+                        </i>
+                        <span>수강시간</span>
+                    </p>
+                    <p class="infoDesc">
+                        <span class="infoValue">318</span>
+                        <span class="infoUnit">분</span>
+                    </p>
+                </div>
+                <div class="currentInfo class">
+                    <p class="infoTitle">
+                        <i class="iconTitle" aria-hidden="true">
+                            <img src="/img/icon_class.png" alt="수강강의 아이콘">
+                        </i>
+                        <span>수강강의</span>
+                    </p>
+                    <p class="infoDesc">
+                        <span class="infoValue">86</span>
+                        <span class="infoUnit">강</span>
+                    </p>
+                </div>
+                <img src="/img/img_visual.jpg" alt="비쥬얼 이미지">
+            </div>
+            <div class="panelInfo">
+                <div class="dateAreaWrap">
+                    <div class="swiper dateArea">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><span>2020.05.03 ~ 2020.05.09</span></div>
+                          <div class="swiper-slide"><span>2020.05.10 ~ 2020.05.16</span></div>
+                          <div class="swiper-slide"><span>2020.05.17 ~ 2020.05.23</span></div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <div class="panelSection section1">
+                    <div class="panelTitle">주간 수강일 현황</div>
+                    <div class="panelContent">
+                        <ul class="classDate">
+                            <li class="classDateItem">
+                                <div class="itemIcon">
+                                    <span class="date">5일</span>
+                                    <img src="/img/icon_goal.png" alt="목표달성 아이콘" aria-hidden="true">
+                                </div>
+                                <span class="itemText">목표달성</span>
+                            </li>
+                            <li class="classDateItem">
+                                <div class="itemIcon">
+                                    <span class="date">2일</span>
+                                    <img src="/img/icon_general.png" alt="일반 수강 아이콘" aria-hidden="true">
+                                </div>
+                                <span class="itemText">일반 수강</span>
+                            </li>
+                            <li class="classDateItem totalItem">
+                                <div class="itemIcon">
+                                    <span class="date">7일</span>
+                                    <img src="/img/icon_all_class.png" alt="총수강 아이콘" aria-hidden="true">
+                                </div>
+                                <span class="itemText">총 수강</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="panelSection section2">
+                    <div class="panelTitle">주간 학습 상태 요약</div>
+                    <div class="panelContent">
+                        <table class="tableStudyStatus">
+                            <caption>주간 학습 상태 요약 테이블</caption>
+                            <tbody>
+                                <tr>
+                                    <th>
+                                        <i class="iconStatus" aria-hidden="true">
+                                            <img src="/img/icon_time2.png" alt="전주대비 학습시간 아이콘">
+                                        </i>
+                                        <span class="titleStatus">전주 대비<br>학습시간
+                                        </span>
+                                    </th>
+                                    <td>
+                                        <div class="studyTitle time">
+                                            <span class="studyValue">250</span>
+                                            <span class="studyUnit">분</span>
+                                        </div>
+                                        <p class="studyDesc">
+                                            금주의 학습시간은 <span class="highlight">250분</span>으로<br>
+                                            전 주에 비해 <span class="highlight">50분 덜</span> 공부하였습니다.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <i class="iconStatus" aria-hidden="true">
+                                            <img src="/img/icon_pen.png" alt="전주대비 완강수 아이콘">
+                                        </i>
+                                        <span class="titleStatus">전주 대비<br>완강 수</span>
+                                    </th>
+                                    <td>
+                                        <div class="studyTitle class">
+                                            <span class="studyValue">20</span>
+                                            <span class="studyUnit">강</span>
+                                        </div>
+                                        <p class="studyDesc">
+                                            금주의 완강 수는 <span class="highlight">20강</span>으로<br>
+                                            전 주에 비해 <span class="highlight">3강 더</span> 공부하였습니다.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <i class="iconStatus" aria-hidden="true">
+                                            <img src="/img/icon_heart.png" alt="충실도 아이콘">
+                                        </i>
+                                        <span class="titleStatus">충실도</span>
+                                    </th>
+                                    <td>
+                                        <div class="studyTitle fidelity">
+                                            <span class="studyValue">83</span>
+                                            <span class="studyUnit">점</span>
+                                        </div>
+                                        <p class="studyDesc">
+                                            금주의 충실도는 <span class="highlight">83점</span> 입니다.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="panelSection section3">
+                    <div class="panelTitle">
+                        <div>주간 요일별 학습시간 <span class="minutes">(분)</span></div>
+                        <div class="weekInfo">
+                            <span class="weekItem isCurrent">금주</span>
+                            <span class="weekItem isLast">전주</span>
+                        </div>
+                    </div>
+                    <div class="panelContent">
+                        <div class="weeklyStudy timeData">
+                            <ul class="weeklyStudyGraph">
+                                <li class="weeklyStudyItem">
+                                    <span class="day">일요일</span>
+                                    <div class="studyData">
+                                        <div class="studyDataItem current">
+                                            <span class="graph">
+                                                <span class="graphValue"></span>
+                                            </span>
+                                            <span class="dataNum">800</span>
+                                        </div>
+                                        <div class="studyDataItem last">
+                                            <span class="graph">
+                                                <span class="graphValue"></span>
+                                            </span>
+                                            <span class="dataNum">800</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="weeklyStudyItem">
+                                    <span class="day">월요일</span>
+                                    <div class="studyData">
+                                        <div class="studyDataItem current">
+                                            <span class="graph">
+                                                <span class="graphValue"></span>
+                                            </span>
+                                            <span class="dataNum">200</span>
+                                        </div>
+                                        <div class="studyDataItem last">
+                                            <span class="graph">
+                                                <span class="graphValue"></span>
+                                            </span>
+                                            <span class="dataNum">300</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="weeklyStudyItem">
+                                    <span class="day">화요일</span>
+                                    <div class="studyData">
+                                        <div class="studyDataItem current">
+                                            <span class="graph">
+                                                <span class="graphValue"></span>
+                                            </span>
+                                            <span class="dataNum">400</span>
+                                        </div>
+                                        <div class="studyDataItem last">
+                                            <span class="graph">
+                                                <span class="graphValue"></span>
+                                            </span>
+                                            <span class="dataNum">300</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="weeklyStudyItem">
+                                    <span class="day">수요일</span>
+                                    <div class="studyData">
+                                        <div class="studyDataItem current">
+                                            <span class="graph">
+                                                <span class="graphValue"></span>
+                                            </span>
+                                            <span class="dataNum">200</span>
+                                        </div>
+                                        <div class="studyDataItem last">
+                                            <span class="graph">
+                                                <span class="graphValue"></span>
+                                            </span>
+                                            <span class="dataNum">600</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="weeklyStudyItem">
+                                    <span class="day">목요일</span>
+                                    <div class="studyData">
+                                        <div class="studyDataItem current">
+                                            <span class="graph">
+                                                <span class="graphValue"></span>
+                                            </span>
+                                            <span class="dataNum">500</span>
+                                        </div>
+                                        <div class="studyDataItem last">
+                                            <span class="graph">
+                                                <span class="graphValue"></span>
+                                            </span>
+                                            <span class="dataNum">100</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="weeklyStudyItem">
+                                    <span class="day">금요일</span>
+                                    <div class="studyData">
+                                        <div class="studyDataItem current">
+                                            <span class="graph">
+                                                <span class="graphValue"></span>
+                                            </span>
+                                            <span class="dataNum">300</span>
+                                        </div>
+                                        <div class="studyDataItem last">
+                                            <span class="graph">
+                                                <span class="graphValue"></span>
+                                            </span>
+                                            <span class="dataNum">300</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="weeklyStudyItem">
+                                    <span class="day">토요일</span>
+                                    <div class="studyData">
+                                        <div class="studyDataItem current">
+                                            <span class="graph">
+                                                <span class="graphValue"></span>
+                                            </span>
+                                            <span class="dataNum">700</span>
+                                        </div>
+                                        <div class="studyDataItem last">
+                                            <span class="graph">
+                                                <span class="graphValue"></span>
+                                            </span>
+                                            <span class="dataNum">500</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panelSection section4">
+                    <div class="panelTitle">
+                        <div>주간 요일별 수강 강의 <span class="minutes">(강의 수)</span></div>
+                        <div class="weekInfo">
+                            <span class="weekItem isCurrent">금주</span>
+                            <span class="weekItem isLast">전주</span>
+                        </div>
+                    </div>
+                    <div class="panelContent">
+                        <div class="weeklyStudy classData">
+                            <ul class="weeklyStudyGraph">
+                                <li class="weeklyStudyItem">
+                                    <div class="studyData">
+                                        <div class="studyDataItem current">
+                                            <span class="graph">
+                                                <span class="graphValue"></span>
+                                            </span>
+                                            <span class="dataNum">50</span>
+                                        </div>
+                                        <div class="studyDataItem last">
+                                            <span class="graph">
+                                                <span class="graphValue"></span>
+                                            </span>
+                                            <span class="dataNum">50</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="weeklyStudyItem">
+                                    <div class="studyData">
+                                        <div class="studyDataItem current">
+                                            <span class="graph">
+                                                <span class="graphValue"></span>
+                                            </span>
+                                            <span class="dataNum">30</span>
+                                        </div>
+                                        <div class="studyDataItem last">
+                                            <span class="graph">
+                                                <span class="graphValue"></span>
+                                            </span>
+                                            <span class="dataNum">40</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="weeklyStudyItem">
+                                    <div class="studyData">
+                                        <div class="studyDataItem current">
+                                            <span class="graph">
+                                                <span class="graphValue"></span>
+                                            </span>
+                                            <span class="dataNum">20</span>
+                                        </div>
+                                        <div class="studyDataItem last">
+                                            <span class="graph">
+                                                <span class="graphValue"></span>
+                                            </span>
+                                            <span class="dataNum">10</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="weeklyStudyItem">
+                                    <div class="studyData">
+                                        <div class="studyDataItem current">
+                                            <span class="graph">
+                                                <span class="graphValue"></span>
+                                            </span>
+                                            <span class="dataNum">47</span>
+                                        </div>
+                                        <div class="studyDataItem last">
+                                            <span class="graph">
+                                                <span class="graphValue"></span>
+                                            </span>
+                                            <span class="dataNum">42</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="weeklyStudyItem">
+                                    <div class="studyData">
+                                        <div class="studyDataItem current">
+                                            <span class="graph">
+                                                <span class="graphValue"></span>
+                                            </span>
+                                            <span class="dataNum">5</span>
+                                        </div>
+                                        <div class="studyDataItem last">
+                                            <span class="graph">
+                                                <span class="graphValue"></span>
+                                            </span>
+                                            <span class="dataNum">20</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="weeklyStudyItem">
+                                    <div class="studyData">
+                                        <div class="studyDataItem current">
+                                            <span class="graph">
+                                                <span class="graphValue"></span>
+                                            </span>
+                                            <span class="dataNum">40</span>
+                                        </div>
+                                        <div class="studyDataItem last">
+                                            <span class="graph">
+                                                <span class="graphValue"></span>
+                                            </span>
+                                            <span class="dataNum">35</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="weeklyStudyItem">
+                                    <div class="studyData">
+                                        <div class="studyDataItem current">
+                                            <span class="graph">
+                                                <span class="graphValue"></span>
+                                            </span>
+                                            <span class="dataNum">15</span>
+                                        </div>
+                                        <div class="studyDataItem last">
+                                            <span class="graph">
+                                                <span class="graphValue"></span>
+                                            </span>
+                                            <span class="dataNum">30</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="weekList">
+                                <li class="weekItem">일</li>
+                                <li class="weekItem">월</li>
+                                <li class="weekItem">화</li>
+                                <li class="weekItem">수</li>
+                                <li class="weekItem">목</li>
+                                <li class="weekItem">금</li>
+                                <li class="weekItem">토</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panelSection section5">
+                    <div class="panelTitle">주간 영역별 학습량</div>
+                    <div class="panelContent">
+                        <div class="tableWrap">
+                            <table class="tableStudyVolume">
+                                <caption>주간 영역별 학습량 테이블</caption>
+                                <colgroup>
+                                    <col style="width:26%">
+                                    <col style="width:37%">
+                                    <col style="width:37%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>구분</th>
+                                        <th>
+                                            <span class="titleClass">수강강의(강)</span>
+                                        </th>
+                                        <th>
+                                            <span class="titleTime">수강시간(분)</span>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>국어</td>
+                                        <td>4</td>
+                                        <td>60</td>
+                                    </tr>
+                                    <tr>
+                                        <td>수학</td>
+                                        <td>4</td>
+                                        <td>60</td>
+                                    </tr>
+                                    <tr>
+                                        <td>영어</td>
+                                        <td>4</td>
+                                        <td>60</td>
+                                    </tr>
+                                    <tr>
+                                        <td>한국사</td>
+                                        <td>4</td>
+                                        <td>60</td>
+                                    </tr>
+                                    <tr>
+                                        <td>사회탐구</td>
+                                        <td>4</td>
+                                        <td>60</td>
+                                    </tr>
+                                    <tr>
+                                        <td>과학탐구</td>
+                                        <td>4</td>
+                                        <td>60</td>
+                                    </tr>
+                                    <tr>
+                                        <td>기타</td>
+                                        <td>4</td>
+                                        <td>60</td>
+                                    </tr>
+                                    <tr>
+                                        <td>기타</td>
+                                        <td>4</td>
+                                        <td>60</td>
+                                    </tr>
+                                    <tr>
+                                        <td>기타</td>
+                                        <td>4</td>
+                                        <td>60</td>
+                                    </tr>
+                                    <tr>
+                                        <td>기타</td>
+                                        <td>4</td>
+                                        <td>60</td>
+                                    </tr>
+                                    <tr>
+                                        <td>기타</td>
+                                        <td>4</td>
+                                        <td>60</td>
+                                    </tr>
+                                    <tr>
+                                        <td>기타</td>
+                                        <td>4</td>
+                                        <td>60</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="panelSection section6">
+                    <div class="panelTitle">주간 영역별 학습률</div>
+                    <div class="panelContent">
+                        <ul class="listStudyRatio">
+                            <li class="listStudyRatioItem">
+                                <div class="iconWrap">
+                                    <img src="/img/icon_subject_korean.png" alt="국어 아이콘" aria-hidden="true">
+                                </div>
+                                <div class="contWrap">
+                                    <span class="subject">국어</span>
+                                    <span class="ratio">1%</span>
+                                </div>
+                            </li>
+                            <li class="listStudyRatioItem">
+                                <div class="iconWrap">
+                                    <img src="/img/icon_subject_math.jpg" alt="수학 아이콘" aria-hidden="true">
+                                </div>
+                                <div class="contWrap">
+                                    <span class="subject">수학</span>
+                                    <span class="ratio">100%</span>
+                                </div>
+                            </li>
+                            <li class="listStudyRatioItem">
+                                <div class="iconWrap">
+                                    <img src="/img/icon_subject_english.jpg" alt="영어 아이콘" aria-hidden="true">
+                                </div>
+                                <div class="contWrap">
+                                    <span class="subject">영어</span>
+                                    <span class="ratio">100%</span>
+                                </div>
+                            </li>
+                            <li class="listStudyRatioItem">
+                                <div class="iconWrap">
+                                    <img src="/img/icon_subject_history.jpg" alt="한국사 아이콘" aria-hidden="true">
+                                </div>
+                                <div class="contWrap">
+                                    <span class="subject">한국사</span>
+                                    <span class="ratio">100%</span>
+                                </div>
+                            </li>
+                            <li class="listStudyRatioItem">
+                                <div class="iconWrap">
+                                    <img src="/img/icon_subject_science.jpg" alt="사회탐구 아이콘" aria-hidden="true">
+                                </div>
+                                <div class="contWrap">
+                                    <span class="subject">사회탐구</span>
+                                    <span class="ratio">4%</span>
+                                </div>
+                            </li>
+                            <li class="listStudyRatioItem">
+                                <div class="iconWrap">
+                                    <img src="/img/icon_subject_science.jpg" alt="과학탐구 아이콘" aria-hidden="true">
+                                </div>
+                                <div class="contWrap">
+                                    <span class="subject">과학탐구</span>
+                                    <span class="ratio">6%</span>
+                                </div>
+                            </li>
+                            <li class="listStudyRatioItem">
+                                <div class="iconWrap">
+                                    <img src="/img/icon_subject_etc.png" alt="기타 아이콘" aria-hidden="true">
+                                </div>
+                                <div class="contWrap">
+                                    <span class="subject">기타</span>
+                                    <span class="ratio">0%</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

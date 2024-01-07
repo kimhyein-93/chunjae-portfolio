@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, select, table, td, textarea, th, ul {
+  border: 0;
+  outline: 0;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+body, button, input, select, table, textarea {
+    font-family: 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    -webkit-text-size-adjust:none; 
+
+    @media (max-width:1429px) {
+        font-size: 54%;
+    }
+
+    @media (max-width:1279px) {
+        font-size: 42.5%;
+    }
+
+    @media (max-width:1023px) {
+        font-size: 31%;
+    }
+
+    @media (max-width:750px) {
+        font-size: 15.625%;
+    }
+
+    @media (max-width:359px) {
+        font-size: 13.888%;
+  }
+}
+
+body {
+  position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  text-align: left;
+}
+
+fieldset, img {
+  border: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+address, em {
+  font-style: normal;
+}
+
+input, textarea, select {
+  outline: 0;
+  border-radius: 0;
+  border: 0;
+  appearance: none;
+}
+
+input[readonly] {
+  user-select: none;
+}
+
+textarea {
+  resize: none;
+}
+
+legend {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: 0;
+  outline: none;
+  appearance: none;
+  background-color: transparent;
+  color: inherit;
+  text-transform: none;
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption {
+  display: none;
+}
