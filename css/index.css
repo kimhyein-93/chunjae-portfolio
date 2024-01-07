@@ -277,14 +277,14 @@
   margin-left: 2rem;
   width: 4rem;
   height: 4rem;
-  background: url(/img/icon_plus.png) center no-repeat;
+  background: url(../img/icon_plus.png) center no-repeat;
   background-size: contain;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   content: "";
 }
 .main .panelInfo .panelSection.section1 .classDate .classDateItem + .classDateItem.totalItem .itemIcon:after {
-  background: url(/img/icon_equal.png) center no-repeat;
+  background: url(../img/icon_equal.png) center no-repeat;
   background-size: contain;
 }
 .main .panelInfo .panelSection.section1 .classDate .itemIcon {
@@ -366,21 +366,21 @@
   color: #222222;
 }
 .main .panelInfo .panelSection.section2 .tableStudyStatus .studyTitle.time {
-  background: url(/img/icon_arrow_down.png) no-repeat left center;
+  background: url(../img/icon_arrow_down.png) no-repeat left center;
   background-size: 3.8rem;
 }
 .main .panelInfo .panelSection.section2 .tableStudyStatus .studyTitle.time + .studyDesc .highlight {
   color: #ff7d00;
 }
 .main .panelInfo .panelSection.section2 .tableStudyStatus .studyTitle.class {
-  background: url(/img/icon_arrow_up.png) no-repeat left center;
+  background: url(../img/icon_arrow_up.png) no-repeat left center;
   background-size: 3.8rem;
 }
 .main .panelInfo .panelSection.section2 .tableStudyStatus .studyTitle.class + .studyDesc .highlight {
   color: #18ac90;
 }
 .main .panelInfo .panelSection.section2 .tableStudyStatus .studyTitle.fidelity {
-  background: url(/img/icon_heart2.png) no-repeat left center;
+  background: url(../img/icon_heart2.png) no-repeat left center;
   background-size: 3.8rem;
 }
 .main .panelInfo .panelSection.section2 .tableStudyStatus .studyTitle.fidelity + .studyDesc .highlight {
@@ -722,13 +722,13 @@
 .main .panelInfo .panelSection.section5 .panelContent .tableStudyVolume tr th span.titleClass:before {
   width: 5.2rem;
   height: 4.8rem;
-  background: url(/img/icon_class.png) no-repeat left center;
+  background: url(../img/icon_class.png) no-repeat left center;
   background-size: 5.2rem;
 }
 .main .panelInfo .panelSection.section5 .panelContent .tableStudyVolume tr th span.titleTime:before {
   width: 4.4rem;
   height: 5.4rem;
-  background: url(/img/icon_time.png) no-repeat left center;
+  background: url(../img/icon_time.png) no-repeat left center;
   background-size: 4.4rem;
 }
 .main .panelInfo .panelSection.section5 .panelContent .tableStudyVolume tr td {
