@@ -1,15 +1,18 @@
 # 과제 설명서
 ## T리포트
-### HTML
-+ html/index.html
-### resources
-+ css
-  + /css/scss/reset.scss
-  + /css/scss/index.scss
-+ js
-  + /js/jquery-3.6.1.min.js
-  + /js/swiper-bundle.min.js
-  + /js/ui.js
+### pages URL
++ https://kimhyein-93.github.io/chunjae-portfolio/html/index.html
+### 작업 파일
++ HTML
+  + html/index.html
++ resources
+  + css
+    + /css/scss/reset.scss
+    + /css/scss/index.scss
+  + js
+    + /js/jquery-3.6.1.min.js
+    + /js/swiper-bundle.min.js
+    + /js/ui.js
 ### 핵심 사용기술
 + HTML
 + SCSS
