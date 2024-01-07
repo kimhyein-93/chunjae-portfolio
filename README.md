@@ -5,7 +5,7 @@
 ### resources
 + css
   + /css/scss/reset.scss
-  + /css/base/index.scss
+  + /css/scss/index.scss
 + js
   + /js/jquery-3.6.1.min.js
   + /js/swiper-bundle.min.js
